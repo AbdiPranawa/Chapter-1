@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
       *,
       html {
@@ -47,6 +47,7 @@
         color: white;
         background-color: #5cb85f;
       }
+
       .container-ourServices ul {
         list-style: none;
         padding: 0;
@@ -69,9 +70,59 @@
         padding: 24px;
         gap: 16px;
       }
+
+   .testimonial {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  #testimonialCarousel {
+    background-color: #F1F3FF;
+  }
+
+  .testimonial-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .testimonial-author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+  }
+
+  .testimonial-text p {
+    color: black;
+    font-size: 16px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    display: none;  
+  }
+
+  .custom-prev-btn {
+    margin-right: 20px;
+  }
+
+  .custom-next-btn {
+    margin-left: 20px;
+  }
     </style>
   </head>
   <body>
+    <!-- main -->
+    
     <section id="main" style="background-color: #f1f3ff">
       <!-- navbar -->
       <nav>
@@ -112,6 +163,9 @@
       </div>
     </section>
 
+    <!-- endmain -->
+    <!-- ourServices -->
+
     <section id="ourServices">
       <div class="container-ourServices">
         <div class="row g-0" style="padding: 0px 207px 0px 206px">
@@ -134,6 +188,9 @@
         </div>
       </div>
     </section>
+
+    <!-- endOurServices -->
+    <!-- whyUs -->
 
     <section id="whyUs">
       <div class="container-whyUs" style="padding: 100px 136px">
@@ -167,7 +224,186 @@
         </div>
       </div>
     </section>
-    <section id="testimonials"></section>
-    <section id="gettingStarted"></section>
+
+    <!-- endWhyUs -->
+    <!-- testimonials -->
+
+    <section id="testimonials">
+      <div class="containerTestimonials" style="padding: 0px 506px 0px 466px">
+        <div class="row g-0 d-flex text-center">
+          <div class="col-12">
+            <p style="font-size: 24px; margin-bottom: 16px"><b>Testimonial</b></p>
+            <p style="font-size: 14px">Berbagai review positif dari para pelanggan kami</p>
+          </div>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Testimonial -->
+            <div class="carousel-item active">
+              <div class="testimonial d-flex align-items-center">
+                <img src="public/asset/img_photo.png" class="testimonial-img me-4" alt="John Dee">
+                <div class="testimonial-text">
+                  <div class="testimonial-rating">
+                    <img src="public/asset/Rate.svg" alt="">
+                  </div>
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                  </p>
+                  <p class="testimonial-author">John Dee, 32, Bromo</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Second Testimonial -->
+            <div class="carousel-item">
+              <div class="testimonial d-flex align-items-center">
+                <img src="public/asset/img_photo (1).png" class="testimonial-img me-4" alt="Jane Doe">
+                <div class="testimonial-text">
+                  <div class="testimonial-rating">
+                    <img src="public/asset/Rate.svg" alt="">
+                  </div>
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                  </p>
+                  <p class="testimonial-author">Jane Doe, 29, Bali</p>
+                </div>
+              </div>
+            </div>
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <img src="public/asset/fi_chevron-left.svg" alt="Previous" class="custom-prev-icon">
+              <span class="visually-hidden">Previous</span>
+            </button>
+          
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <img src="public/asset/Right button.svg" alt="Next" class="custom-next-icon">
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- endTestimonial -->
+
+    <!-- gettingStarted -->
+    <section id="gettingStarted">
+      <div class="container-gettingStarted" style="padding: 156px 136px 100px 136px;">
+        <div class="row g-0 d-flex text-center" style="background-color: #0D28A6;">
+          <div class="col-12">
+            <p style="font-size: 36px; color: white; margin: 64px 0px 16px 0px;">Sewa Mobil di Surabaya Barat Sekarang</p>
+            <p style="font-size: 14px; color: white; margin-bottom: 52px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button style="width: 140px; height: 36px; background-color: #5cb85f; color: white; border: none; border-radius: 2px; margin-bottom: 64px;">Mulai Sewa Mobil</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- endGettingStarted -->
+    <!-- FAQ -->
+
+    <section id="FAQ">
+      <div class="container-FAQ" style="padding: 0px 136px 150px 136px;">
+        <div class="row g-0">
+          <div class="col-6">
+            <p style="font-size: 24px; margin-bottom: 16px;"><b>Frequently Asked Question</b></p>
+            <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="col-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item" style="margin-bottom: 16px; border: 1px solid #d4d4d4;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Apa saja syarat yang dibutuhkan?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="margin-bottom: 16px; border: 1px solid #d4d4d4;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Berapa hari minimal sewa mobil lepas kunci?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="margin-bottom: 16px; border: 1px solid #d4d4d4;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Berapa hari sebelumnya sabaiknya booking sewa mobil?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="margin-bottom: 16px; border: 1px solid #d4d4d4;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Apakah Ada biaya antar-jemput?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="border: 1px solid #d4d4d4;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Bagaimana jika terjadi kecelakaan?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the fifth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- endFAQ -->
+    <!-- contactUs -->
+
+    <section id="contactUs">
+      <div class="containerContactUs" style="padding: 0px 136px 100px 136px; align-items: center;">
+        <div class="row g-0" style="border: black solid 1px;">
+          <div class="col-4">
+            <p style="font-size: 14px; margin-bottom: 16px;">Jalan Suroyo No. 161 Mayangan <br>Kota Probolonggo 672000</p>
+            <p style="font-size: 14px; margin-bottom: 16px;">binarcarrental@gmail.com</p>
+            <p style="font-size: 14px; margin-bottom: 16px;">081-233-334-808</p>
+          </div>
+          <div class="col-2">
+            <p style="font-size: 16px; margin-bottom: 16px;">Our services</p>
+            <p style="font-size: 16px; margin-bottom: 16px;">Why Us</p>
+            <p style="font-size: 16px; margin-bottom: 16px;">Testimonial</p>
+            <p style="font-size: 16px;">FAQ</p>
+          </div>
+          <div class="col-4">
+            <p style="font-size: 14px; margin-bottom: 16px;">Connect with us</p>
+            <img src="public/asset/list item.svg" alt="" style="margin-bottom: 60px;">
+          </div>
+          <div class="col-2">
+            <p style="font-size: 14px; margin-bottom: 16px;">Copyright Binar 2022</p>
+            <img src="public/asset/logo.svg" alt="" style="margin-bottom: 60px;">
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
