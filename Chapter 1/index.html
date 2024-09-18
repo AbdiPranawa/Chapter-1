@@ -4,143 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-      *,
-      html {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        width: 1440px;
-        height: auto;
-      }
-
-      nav {
-        display: flex;
-        padding: 25px 136px 0px 136px;
-        justify-content: space-between;
-      }
-
-      nav ul {
-        display: flex;
-        align-items: center;
-        gap: 32px;
-        list-style: none;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: black;
-      }
-
-      .btn-register {
-        width: 81px;
-        height: 36px;
-        gap: 10px;
-        border: none;
-        border-radius: 2px;
-        color: white;
-        background-color: #5cb85f;
-      }
-
-      .container-ourServices ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .container-ourServices ul li {
-        margin-bottom: 16px;
-      }
-
-      .container-ourServices ul li img {
-        margin-right: 16px;
-      }
-
-      .rounded-whyus {
-        width: 268px;
-        height: 196px;
-        border: 1px solid #d0d0d0;
-        border-radius: 8px;
-        padding: 24px;
-        gap: 16px;
-      }
-
-   .testimonial {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-
-  #testimonialCarousel {
-    background-color: #F1F3FF;
-  }
-
-  .testimonial-img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin-right: 20px;
-  }
-
-  .testimonial-author {
-    font-weight: bold;
-    margin-top: 10px;
-    color: black;
-  }
-
-  .testimonial-text p {
-    color: black;
-    font-size: 16px;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #000;
-    border-radius: 50%;
-    display: none;  
-  }
-
-  .custom-prev-btn {
-    margin-right: 20px;
-  }
-
-  .custom-next-btn {
-    margin-left: 20px;
-  }
-    </style>
+        <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- main -->
     
-    <section id="main" style="background-color: #f1f3ff">
+    <section id="main">
       <!-- navbar -->
       <nav>
         <div class="nav-logo">
           <img src="public/asset/logo.svg" alt="logo" />
         </div>
-        <ul>
+        <ul >
           <li>
-            <a href="">Our Services</a>
+            <a href="#ourServices">Our Services</a>
           </li>
           <li>
-            <a href="">Why Us</a>
+            <a href="#whyUs">Why Us</a>
           </li>
           <li>
-            <a href="">Testimonial</a>
+            <a href="#testimonials">Testimonial</a>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <a href="#FAQ">FAQ</a>
           </li>
           <li>
             <button class="btn-register">Register</button>
@@ -152,9 +41,9 @@
       <div class="container-heroes">
         <div class="row g-0">
           <div class="col-6" style="padding-left: 136px">
-            <p style="font-size: 36px; margin-top: 117px"><b>Sewa & Rental Mobil Terbaik di kawasan Surabaya Barat</b></p>
-            <p style="margin-top: 16px">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-            <button style="width: 140px; height: 36px; background-color: #5cb85f; color: white; border: none; border-radius: 2px">Mulai Sewa Mobil</button>
+            <p style="font-size: 36px; font-weight: 700; margin-top: 117px">Sewa & Rental Mobil Terbaik di kawasan Surabaya Barat</p>
+            <p style="font-size: 14px; font-weight: 300; margin-top: 16px">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas <br>terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+            <button class="btn-start">Mulai Sewa Mobil</button>
           </div>
           <div class="col-6" style="text-align: right; margin-top: 16px">
             <img src="public/asset/img_car.png" alt="img-car" style="width: 704px; height: 407px" />
@@ -173,16 +62,16 @@
             <img src="public/asset/img_service.png" alt="img-service" style="width: 459px; height: 428px" />
           </div>
           <div class="col-6" style="padding-top: 136px">
-            <p style="font-size: 24px; margin-bottom: 24px"><b>Best Car Rental for any kind of trip in Surabaya Barat!</b></p>
-            <p style="margin-bottom: 16px">
+            <p style="font-size: 24px; font-weight: 700; margin-bottom: 24px">Best Car Rental for any kind of trip in Surabaya Barat!</p>
+            <p style="font-size: 14px; font-weight: 300; margin-bottom: 16px">
               Sewa mobil di Surabaya Barat bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
             </p>
-            <ul>
+            <ul style="font-size: 14px; font-weight: 300;">
               <li><img src="public/asset/Group 53.svg" alt="" /> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
-              <li><img src="public/asset/Group 53.svg" alt="" /> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
-              <li><img src="public/asset/Group 53.svg" alt="" /> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
-              <li><img src="public/asset/Group 53.svg" alt="" /> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
-              <li><img src="public/asset/Group 53.svg" alt="" /> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+              <li><img src="public/asset/Group 53.svg" alt="" /> Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+              <li><img src="public/asset/Group 53.svg" alt="" /> Sewa Mobil Jangka Panjang Bulanan</li>
+              <li><img src="public/asset/Group 53.svg" alt="" /> Gratis Antar - Jemput Mobil di Bandara</li>
+              <li><img src="public/asset/Group 53.svg" alt="" /> Layanan Airport Transfer / Drop In Out</li>
             </ul>
           </div>
         </div>
@@ -196,30 +85,30 @@
       <div class="container-whyUs" style="padding: 100px 136px">
         <div class="row g-0">
           <div class="col-12">
-            <p style="font-size: 24px; margin-bottom: 16px"><b>Why Us?</b></p>
-            <p style="margin-bottom: 40px">Mengapa harus pilih binar car rental?</p>
+            <p style="font-size: 24px; font-weight: 700; margin-bottom: 16px"><b>Why Us?</b></p>
+            <p style="font-size: 14px; font-weight: 300; margin-bottom: 40px">Mengapa harus pilih binar car rental?</p>
           </div>
         </div>
         <div class="row g-0" style="gap: 32px">
           <div class="col-3 rounded-whyus">
             <img src="public/asset/icon_complete.svg" alt="" style="margin-bottom: 16px" />
-            <p style="font-size: 16px; margin-bottom: 16px"><b>Mobil Lengkap</b></p>
-            <p style="font-size: 14px">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+            <p style="font-size: 16px; font-weight: 700; margin-bottom: 16px"><b>Mobil Lengkap</b></p>
+            <p style="font-size: 14px; font-weight: 300;">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
           </div>
           <div class="col-3 rounded-whyus">
             <img src="public/asset/icon_price.svg" alt="" style="margin-bottom: 16px" />
-            <p style="font-size: 16px; margin-bottom: 16px"><b>Harga Murah</b></p>
-            <p style="font-size: 14px">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+            <p style="font-size: 16px; font-weight: 700; margin-bottom: 16px"><b>Harga Murah</b></p>
+            <p style="font-size: 14px; font-weight: 300;">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
           </div>
           <div class="col-3 rounded-whyus">
             <img src="public/asset/icon_24hrs.svg" alt="" style="margin-bottom: 16px" />
-            <p style="font-size: 16px; margin-bottom: 16px"><b>Layanan 24 Jam</b></p>
-            <p style="font-size: 14px">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+            <p style="font-size: 16px; font-weight: 700; margin-bottom: 16px"><b>Layanan 24 Jam</b></p>
+            <p style="font-size: 14px; font-weight: 300;">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
           </div>
           <div class="col-3 rounded-whyus">
             <img src="public/asset/icon_professional.svg" alt="" style="margin-bottom: 16px" />
             <p style="font-size: 16px; margin-bottom: 16px"><b>Sopir Professional</b></p>
-            <p style="font-size: 14px">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+            <p style="font-size: 14px; font-weight: 300;">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
           </div>
         </div>
       </div>
@@ -232,8 +121,8 @@
       <div class="containerTestimonials" style="padding: 0px 506px 0px 466px">
         <div class="row g-0 d-flex text-center">
           <div class="col-12">
-            <p style="font-size: 24px; margin-bottom: 16px"><b>Testimonial</b></p>
-            <p style="font-size: 14px">Berbagai review positif dari para pelanggan kami</p>
+            <p style="font-size: 24px; font-weight: 700; margin-bottom: 16px">Testimonial</p>
+            <p style="font-size: 14px; font-weight: 300;">Berbagai review positif dari para pelanggan kami</p>
           </div>
         </div>
 
@@ -247,11 +136,11 @@
                   <div class="testimonial-rating">
                     <img src="public/asset/Rate.svg" alt="">
                   </div>
-                  <p>
+                  <p style="font-size: 14px; font-weight: 300;">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
                   </p>
-                  <p class="testimonial-author">John Dee, 32, Bromo</p>
+                  <p class="testimonial-author" style="font-size: 14px; font-weight: 400;">John Dee, 32, Bromo</p>
                 </div>
               </div>
             </div>
@@ -264,11 +153,11 @@
                   <div class="testimonial-rating">
                     <img src="public/asset/Rate.svg" alt="">
                   </div>
-                  <p>
+                  <p style="font-size: 14px; font-weight: 300;">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
                   </p>
-                  <p class="testimonial-author">Jane Doe, 29, Bali</p>
+                  <p class="testimonial-author" style="font-size: 14px; font-weight: 400;">Jane Doe, 29, Bali</p>
                 </div>
               </div>
             </div>
@@ -291,9 +180,9 @@
       <div class="container-gettingStarted" style="padding: 156px 136px 100px 136px;">
         <div class="row g-0 d-flex text-center" style="background-color: #0D28A6;">
           <div class="col-12">
-            <p style="font-size: 36px; color: white; margin: 64px 0px 16px 0px;">Sewa Mobil di Surabaya Barat Sekarang</p>
-            <p style="font-size: 14px; color: white; margin-bottom: 52px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. </p>
-            <button style="width: 140px; height: 36px; background-color: #5cb85f; color: white; border: none; border-radius: 2px; margin-bottom: 64px;">Mulai Sewa Mobil</button>
+            <p style="font-size: 36px; font-weight: 700; color: white; margin: 64px 0px 16px 0px;">Sewa Mobil di Surabaya Barat Sekarang</p>
+            <p style="font-size: 14px; font-weight: 300; color: white; margin-bottom: 52px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="btn-start" style="margin-bottom: 64px;">Mulai Sewa Mobil</button>
           </div>
         </div>
       </div>
@@ -306,8 +195,8 @@
       <div class="container-FAQ" style="padding: 0px 136px 150px 136px;">
         <div class="row g-0">
           <div class="col-6">
-            <p style="font-size: 24px; margin-bottom: 16px;"><b>Frequently Asked Question</b></p>
-            <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p style="font-size: 24px; font-weight: 700; margin-bottom: 16px;"><b>Frequently Asked Question</b></p>
+            <p style="font-size: 14px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </div>
           <div class="col-6">
             <div class="accordion" id="accordionExample">
@@ -382,28 +271,30 @@
 
     <section id="contactUs">
       <div class="containerContactUs" style="padding: 0px 136px 100px 136px; align-items: center;">
-        <div class="row g-0" style="border: black solid 1px;">
+        <div class="row g-0">
           <div class="col-4">
-            <p style="font-size: 14px; margin-bottom: 16px;">Jalan Suroyo No. 161 Mayangan <br>Kota Probolonggo 672000</p>
-            <p style="font-size: 14px; margin-bottom: 16px;">binarcarrental@gmail.com</p>
-            <p style="font-size: 14px; margin-bottom: 16px;">081-233-334-808</p>
+            <p style="font-size: 14px; font-weight: 300; margin-bottom: 16px;">Jalan Suroyo No. 161 Mayangan <br>Kota Probolonggo 672000</p>
+            <p style="font-size: 14px; font-weight: 300; margin-bottom: 16px;">binarcarrental@gmail.com</p>
+            <p style="font-size: 14px; font-weight: 300; margin-bottom: 16px;">081-233-334-808</p>
           </div>
           <div class="col-2">
-            <p style="font-size: 16px; margin-bottom: 16px;">Our services</p>
-            <p style="font-size: 16px; margin-bottom: 16px;">Why Us</p>
-            <p style="font-size: 16px; margin-bottom: 16px;">Testimonial</p>
+            <p style="font-size: 16px; font-weight: 400; margin-bottom: 16px;">Our services</p>
+            <p style="font-size: 16px; font-weight: 400; margin-bottom: 16px;">Why Us</p>
+            <p style="font-size: 16px; font-weight: 400; margin-bottom: 16px;">Testimonial</p>
             <p style="font-size: 16px;">FAQ</p>
           </div>
           <div class="col-4">
-            <p style="font-size: 14px; margin-bottom: 16px;">Connect with us</p>
+            <p style="font-size: 14px; font-weight: 300; margin-bottom: 16px;">Connect with us</p>
             <img src="public/asset/list item.svg" alt="" style="margin-bottom: 60px;">
           </div>
           <div class="col-2">
-            <p style="font-size: 14px; margin-bottom: 16px;">Copyright Binar 2022</p>
+            <p style="font-size: 14px; font-weight: 300; margin-bottom: 16px;">Copyright Binar 2022</p>
             <img src="public/asset/logo.svg" alt="" style="margin-bottom: 60px;">
           </div>
         </div>
       </div>
     </section>
+
+    <!-- endContactUs -->
   </body>
 </html>
